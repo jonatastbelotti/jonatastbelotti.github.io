@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <script type="text/javascript" src="javascript/email.js"></script>
   <header id="cabecalho">
 		<header id="menu">
 			<ul type="I">
@@ -46,11 +47,22 @@
       <header>
         <h1>Emails</h1>
       </header>
-      <ul id="listaRedeSocial">
-        <li><img src="imagens/iconeFacebook.png"><a href="https://www.facebook.com/jonatas.trabucobelotti" target="blank">Facebook</a></li>
-        <li><img src="imagens/iconeTwitter.png"><a href="https://twitter.com/jonatastbelotti?lang=pt" target="blank">Twitter</a></li>
-        <li><img src="imagens/iconeLinkedin.png"><a href="https://br.linkedin.com/pub/j%C3%B4natas-trabuco-belotti/b8/714/3b1" target="blank">Linkedin</a></li>
-        <li><img src="imagens/iconeGoogle+.png"><a href="https://plus.google.com/116945703671301546903/posts" target="blank">Google+</a></li>
+      <ul id="listaEmails">
+        <li>
+          <p><img src="imagens/iconeHotmail.png"> Hotmail</p>
+          <p class="email">jonatas.t.belotti@hotmail.com</p>
+          <input type="submit" value="Enviar Email" name="botao" onclick="enviarEmail('jonatas.t.belotti@hotmail.com')"/>
+        </li>
+        <li>
+          <p id="gmail"><img src="imagens/iconeGmail.png"> Gmail</p>
+          <p class="email">jonatas.t.belotti@gmail.com</p>
+          <input type="submit" value="Enviar Email" name="botao" onclick="enviarEmail('jonatas.t.belotti@gmail.com')"/>
+        </li>
+        <li>
+          <p id="utfpr"><img src="imagens/iconeEmailInstitucional.png"> UTFPR</p>
+          <p class="email">jonatasbelotti@alunos.utfpr.edu.br</p>
+          <input type="submit" value="Enviar Email" name="botao" onclick="enviarEmail('jonatasbelotti@alunos.utfpr.edu.br')"/>
+        </li>
       </ul>
     </article>
 	</section>

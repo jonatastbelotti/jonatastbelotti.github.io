@@ -20,10 +20,11 @@ article header h1{
   text-align: left;
 }
 
-article ul#listaRedeSocial{
+article ul{
   background-color: white;
   margin: 0px 0px 0px 0px;
   padding: 5px;
+  text-align: center;
 }
 
 ul#listaRedeSocial li{
@@ -45,4 +46,42 @@ ul#listaRedeSocial a{
   font-size: 16pt;
   color: blue;
   text-decoration: none;
+}
+
+ul#listaEmails li{
+  display: inline-block;
+  padding: 5px;
+  border: solid blue;
+  border-width: 2px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+ul#listaEmails img{
+  vertical-align: middle;
+}
+
+ul#listaEmails p{
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 22pt;
+  color: blue;
+  vertical-align: middle;
+  margin: 0px 0px 5px 0px;
+}
+
+ul#listaEmails p#gmail{
+  color: red;
+}
+
+ul#listaEmails p#utfpr{
+  color: black;
+}
+
+ul#listaEmails p.email{
+  display: block;
+  font-family: sans-serif;
+  font-size: 12pt;
+  color: black;
+  font-weight: bold;
 }
