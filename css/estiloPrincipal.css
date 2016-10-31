@@ -125,3 +125,7 @@ footer#rodape{
   text-align: center;
   margin-top: 100px;
 }
+
+texto_principal {
+  text-align: justify!important;
+}
