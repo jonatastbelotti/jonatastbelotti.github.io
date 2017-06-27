@@ -2,6 +2,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 
 div#interface{
   display: block;
@@ -51,6 +52,10 @@ header#menu li a{
   font-size: 18pt;
   text-decoration: none;
   color: black;
+}
+
+header#menu li a.selecionado{
+  font-weight: bold;
 }
 
 header#menu li:hover{
@@ -126,6 +131,11 @@ footer#rodape{
   margin-top: 100px;
 }
 
-texto_principal {
+.texto_principal {
   text-align: justify!important;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify!important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13pt;
+  text-indent: 3em;
 }
