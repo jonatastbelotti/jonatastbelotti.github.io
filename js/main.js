@@ -3,7 +3,23 @@
  * main js
  *
  * ------------------------------------------------------------------- 
- */ 
+ */
+
+var SITE_OFICIAL = "https://www.jonatastbelotti.com";
+
+redirecionarSiteOficial();
+
+function redirecionarSiteOficial() {
+    var url = location.href;
+
+    if (url.startsWith("file")) {
+        return;
+    }
+
+    if (url.indexOf(SITE_OFICIAL) < 0) {
+        window.location.replace(SITE_OFICIAL);
+    }
+}
 
 (function($) {
 
@@ -20,7 +36,10 @@
         // will fade out the whole DIV that covers the website.
         $("#preloader").delay(300).fadeOut("slow");
 
-      });       
+	  });
+	  
+	  //Carregando tradução do site
+	  //carregarTextos();
 
   	})
 
@@ -217,52 +236,52 @@
 	------------------------------------------------------ */
 
 	/* local validation */
-	$('#contactForm').validate({
+	// $('#contactForm').validate({
 
-		/* submit via ajax */
-		submitHandler: function(form) {
+	// 	/* submit via ajax */
+	// 	submitHandler: function(form) {
 
-			var sLoader = $('#submit-loader');
+	// 		var sLoader = $('#submit-loader');
 
-			$.ajax({      	
+	// 		$.ajax({      	
 
-		      type: "POST",
-		      url: "inc/sendEmail.php",
-		      data: $(form).serialize(),
-		      beforeSend: function() { 
+	// 	      type: "POST",
+	// 	      url: "https://formspree.io/jonatas.t.belotti@hotmail.com",
+	// 	      data: $(form).serialize(),
+	// 	      beforeSend: function() { 
 
-		      	sLoader.fadeIn(); 
+	// 	      	sLoader.fadeIn(); 
 
-		      },
-		      success: function(msg) {
+	// 	      },
+	// 	      success: function(msg) {
 
-	            // Message was sent
-	            if (msg == 'OK') {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').hide();
-	               $('#contactForm').fadeOut();
-	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
+	//             // Message was sent
+	//             if (msg == 'OK') {
+	//             	sLoader.fadeOut(); 
+	//                $('#message-warning').hide();
+	//                $('#contactForm').fadeOut();
+	//                $('#message-success').fadeIn();   
+	//             }
+	//             // There was an error
+	//             else {
+	//             	sLoader.fadeOut(); 
+	//                $('#message-warning').html(msg);
+	// 	            $('#message-warning').fadeIn();
+	//             }
 
-		      },
-		      error: function() {
+	// 	      },
+	// 	      error: function() {
 
-		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
-		         $('#message-warning').fadeIn();
+	// 	      	sLoader.fadeOut(); 
+	// 	      	$('#message-warning').html("Something went wrong. Please try again.");
+	// 	         $('#message-warning').fadeIn();
 
-		      }
+	// 	      }
 
-	      });     		
-  		}
+	//       });     		
+  	// 	}
 
-	});
+	// });
 
 
  	/*----------------------------------------------------- */

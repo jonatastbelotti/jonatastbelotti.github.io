@@ -1114,12 +1114,14 @@ header .logo a {
 	margin: 0;
 	padding: 0;
 	border: none;
-	font: 0/0 a;
+	/**font: 0/0 a;**/
+	font-family: "poppins-medium", sans-serif;
 	text-shadow: none;
-	color: transparent;
+	/**color: transparent;**/
+	color: #F1F1F1;
 	width: 92px;
 	height: 15px;
-	background: url("../images/logo.png") no-repeat center;
+	/**background: url("../images/logo.png") no-repeat center;**/
 	background-size: 92px 15px;
 }
 
@@ -1543,15 +1545,28 @@ header .logo a {
 	font-size: 1.5rem;
 	line-height: 3rem;
 }
-.about-content .info-list li span {
+.about-content .info-list li span, .about-content .info-list li span a {
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
 	font-size: 1.5rem;
 	line-height: 1;
 }
+.about-content .info-list li span a:hover {
+	color: #FF0077;
+}
 .about-content .skill-bars {
 	margin-top: 6rem;
+}
+
+.timeline-content p a{
+	font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: #6e6e6e;
+}
+.timeline-content p a:hover{
+    color: #FF0077;
 }
 
 .button-section {
