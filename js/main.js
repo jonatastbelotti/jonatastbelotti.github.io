@@ -5,7 +5,7 @@
  * ------------------------------------------------------------------- 
  */
 
-var SITE_OFICIAL = "https://www.jonatastbelotti.com";
+var SITE_OFICIAL = "https://www.jonatastbelotti.com.br";
 
 redirecionarSiteOficial();
 
