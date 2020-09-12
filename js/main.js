@@ -16,9 +16,9 @@ function redirecionarSiteOficial() {
         return;
     }
 
-    if (url.indexOf(SITE_OFICIAL) < 0) {
-        window.location.replace(SITE_OFICIAL);
-    }
+    // if (url.indexOf(SITE_OFICIAL) < 0) {
+    //     window.location.replace(SITE_OFICIAL);
+    // }
 }
 
 (function($) {
